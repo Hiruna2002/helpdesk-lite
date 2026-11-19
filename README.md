@@ -344,4 +344,5 @@ The tests cover the following scenarios:
 | Test Scenario | Expected Result |
 |---|---|
 | Successful#   h e l p d e s k - l i t e  
+ #   h e l p d e s k - l i t e  
  
