@@ -10,7 +10,7 @@ This project was developed using Java 17, Spring Boot, Spring Data JPA, and MySQ
 
 ## 2. Technologies Used
 
-| Technology | Purpose |
+| **Technology** | **Purpose** |
 |---|---|
 | Java 17 | Programming language |
 | Spring Boot | Backend application framework |
@@ -156,7 +156,7 @@ Base URL:
 
 `http://localhost:8080`
 
-| HTTP Method | Endpoint | Description |
+| **HTTP Method** | **Endpoint** | **Description** |
 |---|---|---|
 | POST | `/api/tickets` | Create a new ticket |
 | GET | `/api/tickets` | Retrieve tickets with optional filters and pagination |
@@ -204,7 +204,7 @@ Optional filters and pagination:
 
 **Query Parameters**
 
-| Parameter | Description | Default |
+| **Parameter** | **Description** | **Default** |
 |---|---|---|
 | status | Filter by ticket status | No filter |
 | priority | Filter by ticket priority | No filter |
@@ -316,7 +316,7 @@ Each history record contains:
 
 The application validates incoming requests and handles common API errors through centralized exception handling.
 
-| HTTP Status | Description |
+| **HTTP Status** | **Description** |
 |---|---|
 | 400 Bad Request | Invalid request data, validation errors, malformed enum values, or invalid ID values |
 | 404 Not Found | Requested ticket does not exist |
@@ -341,8 +341,9 @@ Automated tests are implemented using JUnit 5, Mockito, and Spring Boot testing 
 
 The tests cover the following scenarios:
 
-| Test Scenario | Expected Result |
+| **Test Scenario** | **Expected Result** |
 |---|---|
-| Successful#   h e l p d e s k - l i t e  
- #   h e l p d e s k - l i t e  
- 
+| Successful ticket creation | Ticket is created with `OPEN` status |
+| Invalid status transition | Invalid transition is rejected |
+| Valid status transition | Ticket status is updated and history is recorded |
+| Invalid email address | Validation error is detected |
